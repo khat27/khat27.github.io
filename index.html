@@ -1,178 +1,212 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khat's Portfolio</title>
+  <link rel="icon" href="myAvatar.jpeg"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #ffefe0;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #d35400;
+    }
+    header p {
+      margin: 5px 0 0;
+      color: #555;
+    }
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-in-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      border-bottom: 2px solid #f5cbaa;
+      padding-bottom: 5px;
+      color: #b34100;
+    }
+    .card {
+      background: #fffdf8;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    footer {
+      background: #b34100;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+    }
+    a {
+      color: #e67e22;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #ca5310;
+      text-decoration: underline;
+    }
+    .articles a {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .cv-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #fff;
+      color: #b34100;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .cv-btn:hover {
+      background: #f5cbaa;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello There! This is Khat</h1>
+    <p>Data Analyst | Analytics Engineer</p>
+  </header>
 
-<html>
-	<head>
-		<title>Muhammad Khatami | Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/myAvatar.png"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Khat, a data analyst passionate about turning complex datasets into clear, actionable insights.
+      With 4+ years of experience accross multiple industries, I specialize in building efficient data systems,
+      uncovering growth opportunities, and helping businesses make smarter, faster decisions. This site is where I
+      share my projects, articles, and ideas at the intersection of data, business strategy, and innovation.
+    </p>
+  </section>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">My Projects</a></li>
-							<li><a href="#two">Why Choose Me</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+  <section>
+    <h2>My Experiences</h2>
+    <div class="card">
+      <h3>Senior Data Analyst - Gojek</h3>
+      <small>April 2025 - Present</small>
+      <p>
+        Building the analytics foundation for Gojek’s 3P car business, which connects renters and drivers. Designed a
+        database schema to manage $30M+ worth of car assets, standardized 10+ core tables and SQL workflows,
+        and led driver income program analysis that retained 90% of drivers weekly while increasing revenue 10% monthly.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Data Analyst - JULO</h3>
+      <small>October 2023 - April 2025</small>
+      <p>
+        Analyzed transactional and user behavior data to improve lending and repayment strategies. Collaborated
+        with sales ops and growth strategy teams to identify patterns that helped optimize acquisition and retention
+        in a competitive fintech environment. Refined the database schema and SQL query which resulted in ~70% data 
+        extraction cost reduction.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Analytics Engineer - Freelance</h3>
+      <small>July 2023 - April 2025</small>
+      <p>
+        Helped a fintech company design an efficient and scalable database schema and enhanced a trading company's
+        data pipeline to improve data quality and reduce costs while also setting up dashboards for them.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Data Analyst - Tokopedia</h3>
+      <small>April 2022 - June 2023</small>
+      <p>
+        At Tokopedia, I built 10+ self-service analytics tools and released multiple data products and deep-dive
+        analyses that drove ~$600K in additional sales and attracted ~100,000 new monthly users. I also optimized
+        queries and database schemas, reducing the Dilayani Tokopedia team’s data extraction cost by 40%.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Data Scientist - Telkom Indonesia</h3>
+      <small>March 2021 - February 2022</small>
+      <p>
+        At Telkom Indonesia, I gathered and cleaned large datasets (tweets, news, profiles) for machine learning
+        model training, assisted in model development, and collaborated with the team to build dashboards for
+        visualization and insights.
+      </p>
+    </div>
+  </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <section>
+    <h2>Check Out My Works!</h2>
+    <div class="card">
+      <h3><a href="https://medium.com/@muhammadkhatami027/your-bigquery-has-been-costly-as-of-late-try-these-improvements-16ab4f061298" target="_blank">Your BigQuery Has Been Costly As Of Late? Try These Improvements!</a></h3>
+      <p>If you feel like your BigQuery costs have been getting out of hand, here are some strategies to optimize your queries and reduce expenses</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://medium.com/@muhammadkhatami027/analysis-and-recommendation-for-marketing-campaign-case-c7367fe3010a" target="_blank">Need Some Analytical Practice? Let's Analyze This Campaign Together</a></h3>
+      <p>If you’re new to data analysis, this case study breaks down the process of analyzing a marketing campaign step-by-step. Starting from defining the problem to presenting the insights, it covers all the essential steps.</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://public.tableau.com/views/_A_CompanyRetailPerformance_16894372472130/RetailStory?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">New To Tableau? Check This Simple Dashboard For Retail Business</a></h3>
+      <p>If you’re new to Tableau, this dashboard provides a clear and concise overview of retail performance metrics. It’s a great starting point for understanding how to visualize data effectively.</p>
+    </div>
+  </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Hello, I'm Khatami</h1>
-							<p>Thinking outside the box, Living outside the comfort zone</p>
-							<ul class="actions">
-								<li><a href="selfIntro.html" class="button">More About Me</a></li>
-							</ul>
-						</div>
-					</section>
+  <section>
+    <h2>Explore My Articles</h2>
+    <div class="card articles">
+      <p>Some of my articles:</p>
+      <a href="https://medium.com/@muhammadkhatami027/from-smart-goals-to-woop-success-a-holistic-approach-to-goal-setting-fbf979949d71" target="_blank">📄 From SMART Goals to WOOP Success: A Holistic Approach to Goal-Setting</a>
+      <a href="https://medium.com/@muhammadkhatami027/mastering-etl-pipelines-a-step-by-step-guide-for-data-engineers-e3458e2ec168" target="_blank">📄 Mastering ETL Pipelines: A Step-by-Step Guide for Data Engineers</a>
+      <a href="https://medium.com/@muhammadkhatami027/data-governance-unlocked-best-practices-for-ensuring-quality-and-integrity-3aedb043e875" target="_blank">📄 Data Governance Unlocked: Best Practices for Ensuring Quality and Integrity</a>
+      <a href="https://medium.com/@muhammadkhatami027/mastering-data-cleaning-7-practical-techniques-to-keep-your-data-sparkling-b510a3294d8f" target="_blank">📄 Mastering Data Cleaning: 7 Practical Techniques to Keep Your Data Sparkling</a>
+    </div>
+  </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="https://medium.com/@muhammadkhatami027/analysis-and-recommendation-for-marketing-campaign-case-c7367fe3010a" class="image"><img src="images/Marketing.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Analysis and Recommendation for Marketing Campaign Case</h2>
-									<p>Let's do some quick analysis on a marketing campaign dataset.</p>
-									<ul class="actions">
-										<li><a href="https://medium.com/@muhammadkhatami027/analysis-and-recommendation-for-marketing-campaign-case-c7367fe3010a" target="_blank" class="button">More ></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="InsuranceRapid.html" class="image"><img src="images/Insurance.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Insurance Client Prediction</h2>
-									<p>Self project where I predict the potential clients using decision tree with RapidMiner</p>
-									<ul class="actions">
-										<li><a href="InsuranceRapid.html" class="button">More ></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="Kompas.id.html" class="image"><img src="images/Phone.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Kompas.id Redesign</h2>
-									<p>This is the design illurstration that I made to apply for Kompas.id internship program as a UI designer.</p>
-									<ul class="actions">
-										<li><a href="Kompas.id.html" class="button">More ></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a class="image"><img src="images/myAvatar.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Wanna See More of Me?</h2>
-									<p>That's not all, let's head to my collection of projects and certificates!</p>
-									<ul class="actions">
-										<li><a href="projects.html" class="button">Let's Go!</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+  <footer>
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="mailto:muhammadkhatami027@gmail.com">muhammadkhatami027@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/muhammadkhatami027" target="_blank">Muhammad Khatami</a></p>
+    <a href="Muhammad Khatami - Resume.pdf" class="cv-btn" target="_blank">📄 View My Resume</a>
+  </footer>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Why Me?</h2>
-							<p>It's not complete until you know what are my skills.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-brain"></span>
-									<h3>Analytical skills</h3>
-									<p>With my experience in analytical roles, I can assure you that your data is in the right hands as some people call me the Midas of data.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Data processing skills</h3>
-									<p>You can count on me to process your data as I'm pretty well-versed in analytic tools like SQL, Excel, Google Analytics, Tableau, you name it!</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Back-End skills</h3>
-									<p>I learned to code Python, Scala, Java, SQL, and also a little bit of everything about application and website "anatomy" in theory.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-smile"></span>
-									<h3>Soft skills</h3>
-									<p>Being active in organization helps me earn skills that's never been taught in class like public speaking, leadership, and ability to communicate my thoughts.</p>
-								</section>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Let's meet again!</p>
-							<div>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:muhammadkhatami027@gmail.com">Muhammadkhatami027@gmail.com</a>
-										</li>
-										<li>
-											<h3>Phone / WhatsApp</h3>
-											<span>0812-8104-1943</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="http://line.me/ti/p/~khatam11" target="_blank" class="fab fa-line"><span class="label">GitHub</span></a></li>
-												<li><a href="https://github.com/khat27" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/muhammadkhatami027/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li>
-						<li>
-							Palmerah, West Jakarta<br />
-							Indonesia
-						</li>
-						<li><a href="assets/CV Muhammad Khatami.pdf">Download my CV</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <script>
+    // Reveal sections on scroll animation
+    const sections = document.querySelectorAll('section');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const boxTop = sec.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          sec.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
 </html>
